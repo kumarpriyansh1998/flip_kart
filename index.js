@@ -13,6 +13,10 @@ let taxRate = 5; // 5%
 let discountPercentage = 10; // 10%
 let loyaltyRate = 2; //
 
+app.get('/',(req,res)=>{
+  return res.send("Welcome");
+});
+
 app.get('/cart-total',(req,res)=>{
   
   let newItemPrice = parseFloat(req.query.newItemPrice);
